@@ -99,12 +99,13 @@ class SortingRobot:
         Sort the robot's list.
         """
         """
-            Grab the item and perform a selection sort on the way to the end of the list,
-            i.e. compare the items as you go and swap the the items if the the item from the list being compared is larger
-            when the end of the list is reached if the held item is larger, swap, if not traverse back left
-            While going left, compare and if the item in the list is smaller, swap. Keep going left until you reach the index
-            with the value of None. The None value will start at the beginning of the process and work it's way to the end
-            so after each iteration the index containing None will move right one position.
+            Grab the first item and perform a bubble sort on the way to the end of the list,
+            i.e. compare the items as you go and swap the the items if the the item from the list being compared is larger.
+            When the end of the list is reached if the held item is larger, swap, if not traverse back left.
+            While going left, perform a selection sort, compare and if the item in the list is smaller, swap. 
+            Keep going left until you reach the index with the value of None ( The first postion on the first go around). 
+            The None value will act as a pointer, starting at the beginning of the list, and working it's way to the end.
+            So after each iteration, the index containing None will move right one position.
             Perform the helper function until the None value has made it to the end of the list
         """
 
